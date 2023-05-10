@@ -26,7 +26,7 @@
             <option value="white">White</option>
             <option value="marinara">Marinara</option>
         </select>
-        <h1>Select size</h1>
+        <h1>Select size of pizza</h1>
         <select name="size">
             <option value="small">Small</option>
             <option value="medium">Medium</option>

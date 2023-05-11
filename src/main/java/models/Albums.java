@@ -64,4 +64,7 @@ public class Albums {
         this.sales = sales;
         this.genre = genre;
     }
+
+    public Albums() {
+    }
 }

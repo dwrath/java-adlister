@@ -1,3 +1,5 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import models.Albums;
 import models.Author;
 import models.Quote;
@@ -5,8 +7,10 @@ import models.Quote;
 import java.util.ArrayList;
 
 public class BeanTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
         Albums album = new Albums(1, "Michael Jackson", "Thriller", "30-Nov-82", 65, "Pop");
+        System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(album));
         Author author1 = new Author("R.L. Stine");
         Author author2 = new Author("J.K. Rowling");
         Quote quote1 = new Quote("I'm a vegetarian", author1);

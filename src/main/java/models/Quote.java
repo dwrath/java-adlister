@@ -7,9 +7,9 @@ public class Quote {
     public Quote() {
     }
 
-    public Quote(String quote, String author) {
+    public Quote(String quote, Author author) {
         this.quote = quote;
-        this.author = author;
+        this.author = author.getName();
     }
 
     public String getQuote() {

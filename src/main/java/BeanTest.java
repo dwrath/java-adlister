@@ -8,8 +8,8 @@ public class BeanTest {
     public static void main(String[] args) {
         Albums album = new Albums(1, "Michael Jackson", "Thriller", "30-Nov-82", 65, "Pop");
         Author author = new Author("R.L. Stine");
-        Quote quote1 = new Quote("I'm a vegetarian", "R.L. Stine");
-        Quote quote2 = new Quote("I'm a vegetarian", "R.L. Stine");
+        Quote quote1 = new Quote("I'm a vegetarian", author);
+        Quote quote2 = new Quote("I'm a vegetarian", author);
 
         ArrayList<Quote> quotes = new ArrayList<Quote>();
         quotes.add(quote1);

@@ -2,12 +2,12 @@ package models;
 
 public class Quote {
     private String quote;
-    private String author;
+    private Author author;
 
     public Quote() {
     }
 
-    public Quote(String quote, String author) {
+    public Quote(String quote, Author author) {
         this.quote = quote;
         this.author = author;
     }
@@ -17,6 +17,6 @@ public class Quote {
     }
 
     public String getAuthor() {
-        return author;
+        return author.getName();
     }
 }

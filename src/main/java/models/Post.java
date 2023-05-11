@@ -34,7 +34,6 @@ public class Post {
     public Post(String title, String post, String[] topics) {
         this.title = title;
         this.post = post;
-        this.topics = topics;
     }
 
 }

@@ -7,10 +7,8 @@
 </head>
 <body>
     <jsp:include page="partials/navbar.jsp" />
-
     <div class="container">
         <h1>Viewing your profile, ${username}</h1>
     </div>
-
 </body>
 </html>

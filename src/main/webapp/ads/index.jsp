@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="models.Ad" %>
 <%@ page import="dao.ListAdsDao" %>
 <%@ page import="java.util.List" %><%--
@@ -20,6 +21,10 @@
     for (Ad ad : ads) { %>
     <li><%= ad.getTitle()+ " - "+ad.getDescription() %></li>
     <% } %>
+
+    <c:forEach var="ad" items="${ads}">
+        <li>${ad.title} - ${ad.description}</li>
+    </c:forEach>
 </ul>
 
 </body>

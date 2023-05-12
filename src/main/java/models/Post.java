@@ -4,6 +4,7 @@ public class Post {
     private String title;
     private String post;
 
+
     public String getTitle() {
         return title;
     }
@@ -20,6 +21,7 @@ public class Post {
         this.post = post;
     }
 
+
     public Post() {
     }
 
@@ -27,4 +29,11 @@ public class Post {
         this.title = title;
         this.post = post;
     }
+
+
+    public Post(String title, String post, String[] topics) {
+        this.title = title;
+        this.post = post;
+    }
+
 }
